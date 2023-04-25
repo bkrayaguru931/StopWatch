@@ -30,12 +30,32 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 0px;
+
 }
 
-.buttons img {
-    width: 50px;
-    margin: 0 20px;
+.transparentButtons  {
+    height: 60px;
+    width: 130px;
+    margin: 0px 10px;
+
     cursor: pointer;
+    padding: 0;
+    border: none;
+    /* outline: none; */
+    border-radius: 20px; 
+    background:transparent ;
+}
+.transparentButtons:hover {
+    background: rgb(152, 152, 152);
+}
+.transparentButtons:active{
+    background: rgb(90, 90, 90);
+}
+ion-icon{
+    color: antiquewhite;
+    font-size:55px;
+    --ionicon-stroke-width: 20px;
 }
 
 

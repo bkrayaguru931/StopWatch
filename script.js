@@ -32,3 +32,17 @@ function restart() {
     [seconds, minutes, hours] = [0, 0, 0];
     displayTime.innerHTML = "00:00:00";
 }
+let button1=document.getElementById('button1');
+let button2=document.getElementById('button2');
+let button3=document.getElementById('button3');
+let audio1=new Audio();
+audio1.src="imgs/click.mp3";
+button1.addEventListener('click',function(){
+    audio1.play();
+});
+button2.addEventListener('click',function(){
+    audio1.play();
+});
+button3.addEventListener('click',function(){
+    audio1.play();
+});

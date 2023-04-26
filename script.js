@@ -56,3 +56,11 @@ button3.addEventListener('click', function () {
 // displayTime.addEventListener('click', function () {
 //     audio2.play();
 // });
+let button=document.getElementById('toggle');
+
+button.addEventListener('click',function() {
+    audio1.play();
+    document.documentElement.classList.toggle('darkmode');
+    
+   
+});

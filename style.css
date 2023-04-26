@@ -121,8 +121,8 @@ ion-icon {
 }
 
 .second-7 {
-    top: 162px;
-    right: 142px;
+    top: 167px;
+    right: 141px;
 }
 
 .second-8 {
@@ -168,23 +168,19 @@ ion-icon {
     height: 70px;
     background-color: white;
     position: absolute;
-    left: 70px
+    left: 70px;
+    transform-origin: bottom;
 }
 
-.second-hand .arrow {
-    /* font-size: 300px;
-    font-weight: bold;
-    color: red;
-    transform: rotate(180deg);
-    position: absolute;
-    left: 10px; */
+/* .second-hand .arrow {
     border: solid white;
     border-width: 0 2px 2px 0;
     padding: 3px;
     margin-left: 67px;
     transform: rotate(-135deg);
     -webkit-transform: rotate(-135deg);
-}
+}  */
+
 
 
 
@@ -258,23 +254,17 @@ ion-icon {
     position: absolute;
     left: 19px;
     top: 1px;
-
+    transform-origin: bottom;
 }
 
-.count-hand .arrow {
-    /* font-size: 300px;
-    font-weight: bold;
-    color: red;
-    transform: rotate(180deg);
-    position: absolute;
-    left: 10px; */
+/* .count-hand .arrow {
     border: solid white;
     border-width: 0 1px 1px 0;
     padding: 3px;
     margin-left: 16px;
     transform: rotate(-135deg);
     -webkit-transform: rotate(-135deg);
-}
+} */
 
 
 .hook {

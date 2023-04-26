@@ -48,11 +48,14 @@ button3.addEventListener('click', function () {
     audio1.play();
 });
 
+const deg = 6;
+const sc = document.querySelector('#clockhand');
+const cnt = document.querySelector('#counthand');
 
-// add tik tik sound to clock
-
-// let audio2 = new Audio();
-// audio1.src = "assets/tik.mp3";
-// displayTime.addEventListener('click', function () {
-//     audio2.play();
-// });
+setInterval(() => {
+    let d = new Date();
+    let secrotation = d.getSeconds() * deg;
+    clockhand.style.transform = `rotateZ(${secrotation}deg)`;
+    let cntrotation = d.getMinutes() * deg;
+    counthand.style.transform = `rotateZ(${cntrotation}deg)`;
+}, 1000);

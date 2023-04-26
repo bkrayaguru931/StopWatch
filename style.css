@@ -313,9 +313,11 @@ ion-icon {
 }
 #toggle{
     background: transparent;
-    border: none;
+    border:none;
     cursor: pointer;
-    
+    height: 30%;
+    margin-top: 300px;
+    padding: 0;
 }
 
 

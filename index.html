@@ -2,59 +2,63 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>StopWatch</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
 </head>
 
 <body>
-    <!-- <div class="glass"></div> -->
-    <div class="clockdial">
-        <div class="clockPoint"></div>
-        <div class="second second-1">5</div>
-        <div class="second second-2">10</div>
-        <div class="second second-3">15</div>
-        <div class="second second-4">20</div>
-        <div class="second second-5">25</div>
-        <div class="second second-6">30</div>
-        <div class="second second-7">35</div>
-        <div class="second second-8">40</div>
-        <div class="second second-9">45</div>
-        <div class="second second-10">50</div>
-        <div class="second second-11">55</div>
-        <div class="second second-12">60</div>
-        <div class="second-hand-wrapper">
-            <div class="second-hand">
-                <div class="hand" id="clockhand"></div>
-                <!-- <div class="arrow"></div> -->
-            </div>
-        </div>
-        <div class="countdial">
-            <div class="count count-1">10</div>
-            <div class="count count-2">20</div>
-            <div class="count count-3">30</div>
-            <div class="count count-4">40</div>
-            <div class="count count-5">50</div>
-            <div class="count count-6">60</div>
-            <div class="count-hand-wrapper">
-                <div class="count-hand">
-                    <div class="hand" id="counthand"></div>
+
+    <button id="toggle">
+        <ion-icon name="moon"></ion-icon>
+        <h1>Tap the moon to switch modes!</h1>
+    </button>
+
+    <div class="glass">
+        <div class="clockdial">
+            <div class="clockPoint"></div>
+            <div class="second second-1">5</div>
+            <div class="second second-2">10</div>
+            <div class="second second-3">15</div>
+            <div class="second second-4">20</div>
+            <div class="second second-5">25</div>
+            <div class="second second-6">30</div>
+            <div class="second second-7">35</div>
+            <div class="second second-8">40</div>
+            <div class="second second-9">45</div>
+            <div class="second second-10">50</div>
+            <div class="second second-11">55</div>
+            <div class="second second-12">60</div>
+            <div class="second-hand-wrapper">
+                <div class="second-hand">
+                    <div class="hand" id="clockhand"></div>
                     <!-- <div class="arrow"></div> -->
                 </div>
             </div>
+            <div class="countdial">
+                <div class="count count-1">10</div>
+                <div class="count count-2">20</div>
+                <div class="count count-3">30</div>
+                <div class="count count-4">40</div>
+                <div class="count count-5">50</div>
+                <div class="count count-6">60</div>
+                <div class="count-hand-wrapper">
+                    <div class="count-hand">
+                        <div class="hand" id="counthand"></div>
+                        <!-- <div class="arrow"></div> -->
+                    </div>
+                </div>
+            </div>
         </div>
+        <div class="hook"></div>
     </div>
-    <div class="hook"></div>
 
     <div class="stopwatch">
         <h1 id="displayTime">00:00:00</h1>
         <div class="buttons">
-            <!-- <img src="imgs/pause.png" alt="pause" onclick="pause()">
-            <img src="imgs/play.jpeg" alt="play" onclick="start()">
-            <img src="imgs/restart.png" alt="restart" onclick="restart()"> -->
             <button type="button" class="transparentButtons" id="button1" onclick="start()">
                 <ion-icon name="play-circle-outline"></ion-icon>
             </button>
@@ -66,7 +70,7 @@
             </button>
         </div>
     </div>
-
+    </div>
     <script src="script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

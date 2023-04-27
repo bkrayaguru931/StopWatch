@@ -48,14 +48,18 @@ button3.addEventListener('click', function () {
     audio1.play();
 });
 
-const deg = 6;
-const sc = document.querySelector('#clockhand');
-const cnt = document.querySelector('#counthand');
+// js for analog clock
 
+const deg = 6;
+const hr = document.querySelector('#hourhand');
+const mn = document.querySelector('#minutehand');
+const sc = document.querySelector('#secondhand');
 setInterval(() => {
-    let d = new Date();
-    let secrotation = d.getSeconds() * deg;
-    clockhand.style.transform = `rotateZ(${secrotation}deg)`;
-    let cntrotation = d.getMinutes() * deg;
-    counthand.style.transform = `rotateZ(${cntrotation}deg)`;
-}, 1000);
+let day = new Date();
+let hh = day.getHours() * 30;
+let mm = day.getMinutes() * deg;
+let ss = day.getSeconds() * deg;
+hr.style.transform = `rotateZ(${hh+(mm/12)}deg)`;
+mn.style.transform = `rotateZ(${mm}deg)`;
+sc.style.transform = `rotateZ(${ss}deg)`;
+})

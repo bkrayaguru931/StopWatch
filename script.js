@@ -47,7 +47,12 @@ button2.addEventListener('click', function () {
 button3.addEventListener('click', function () {
     audio1.play();
 });
-
+//toggle button
+let button = document.getElementById('toggle');
+button.addEventListener('click',function(){
+    audio1.play();
+    document.documentElement.classList.toggle('darkmode');
+});
 // js for analog clock
 
 const deg = 6;

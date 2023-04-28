@@ -47,12 +47,41 @@ button2.addEventListener('click', function () {
 button3.addEventListener('click', function () {
     audio1.play();
 });
+
 //toggle button
-let button = document.getElementById('toggle');
-button.addEventListener('click',function(){
-    audio1.play();
-    document.documentElement.classList.toggle('darkmode');
-});
+// let button = document.getElementById('toggle');
+// button.addEventListener('click',function(){
+//     audio1.play();
+//     document.documentElement.classList.toggle('darkmode');
+// });
+
+
+
+                        // Either
+let icon = document.getElementById("icon");
+icon.addEventListener('click',function(){
+     audio1.play();
+     if(document.documentElement.classList.toggle('darkmode')){
+        icon.src = "assets/sun.png";
+     }
+     else{
+         icon.src = "assets/moon.png";
+     }
+ });
+
+
+                        //or
+// let icon = document.getElementById("icon");
+// icon.onclick = function(){
+//     document.body.classList.toggle("darkmode");
+//     if(document.body.classList.contains("darkmode")){
+//         icon.src = "assets/sun.png";
+//     }
+//     else{
+//         icon.src = "assets/moon.png";
+//     }
+// }
+
 // js for analog clock
 
 const deg = 6;
